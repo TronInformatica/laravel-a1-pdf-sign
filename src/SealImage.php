@@ -101,7 +101,7 @@ class SealImage
                 150,
                 $callback
             )
-            ->addTextField($certDueDate ?? '', 160, 250, $callback)
+            ->addTextField(date("Y.m.d h:i:s -03'00'"), 160, 250, $callback)
             ->generateImage();
     }
 
